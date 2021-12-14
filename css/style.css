@@ -1,0 +1,130 @@
+/* Google font (poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --body-color: #C9D1D3;
+    --nav-color: #00909E;
+    --bg-color: #fff;
+    --font-color: #1B2A49;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--body-color);
+    color: var(--font-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    background-color: var(--bg-color);
+    width: 1140px;
+    align-items: center;
+    border-radius: 14px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+/* Signup From css code start here */
+.signup-form-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;   
+}
+
+.form{
+    padding: 25px 35px;
+}
+.form header{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.signup-form-details{
+    margin-top: 20px;
+}
+.form form .error-txt{
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+.form form .name-details{
+    display: flex;  
+}
+.form form .name-details .field:first-child{
+    margin-right: 30px;
+}
+.form form .field{
+    font-size: 16px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form label{
+    margin-bottom: 3px;
+}
+.form form .field input{
+    outline: none;
+}
+.form form .input input{
+    height: 36px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form form .field i{
+    position: absolute;
+    right: 2px;
+    bottom: 11px;
+    color: #ccc;
+    cursor: pointer;
+}
+.form form .field i.active::before{
+    color: #333;
+    content: "\f070";
+}
+.form form .image input{
+    font-size: 17px;
+}
+.form form .button input{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    height: 44px;
+    width: 106.5%;
+    margin-top: 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--font-color);
+}
+.form form .link{
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    font-size: 17px;
+}
+.form form .link a{
+    color: var(--nav-color);
+}
+.form form .link a:hover{
+    text-decoration: underline;
+}
+/* Signup From css code end here */
